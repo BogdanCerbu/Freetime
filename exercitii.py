@@ -35,5 +35,3 @@ def roll_dice(attacking_army, defending_army):
             print('Attacker wins! Defender loses 1 army')
             defending_army -= 1
     return (attacking_army, defending_army)
-
-
