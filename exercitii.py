@@ -27,8 +27,8 @@ def roll_dice(attacking_army, defending_army):
         else:
             print('Attacker wins! Defender loses 1 army')
             defending_army -= 1
-    for i in range(1, len(roll_white)):
-        if roll_white[i] >= roll_red[i]:
+    for i in range(0, len(roll_white)):
+        if roll_white[len(roll_white)-1] >= roll_red[len(roll_red)-1]:
             print('Defender wins! Attacker loses 1 army')
             attacking_army -= 1
         else:
@@ -37,4 +37,3 @@ def roll_dice(attacking_army, defending_army):
     return (attacking_army, defending_army)
 
 
-print(roll_dice(3, 1))
